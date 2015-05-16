@@ -4,8 +4,6 @@ var nodemailer = require('nodemailer');
 var transporter = nodemailer.createTransport();
 
 http.createServer(function(req, res) {
-	console.log('Request came');
-
 	var transporter = nodemailer.createTransport({
 	  service: 'Hotmail',
 	      auth: {
